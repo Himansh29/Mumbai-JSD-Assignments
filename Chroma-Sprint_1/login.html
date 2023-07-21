@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="stylesheet1.css" rel="stylesheet" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="background-color: #000000">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"
+            ><img
+              src="data:image/png;base64,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"
+              style="width: 60x; height: 60px"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#ecartnav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="ecartnav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="navbars.html" class="nav-link"> Home </a></li>
+              <li class="nav-item">
+                <a href="Laptops.html" class="nav-link"> Laptop/Printer </a>
+              </li>
+              <li class="nav-item">
+                <a href="product1.html" class="nav-link"> Television </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Mobile Phones
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">Samsung phones</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">OnePlus Phones</a></li>
+                  <li><a href="#" class="dropdown-item">Motorola phones</a></li>
+                  <li><a href="#" class="dropdown-item">Realmi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Home Appliances
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">kitchen Appliances</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Washing Machine</a></li>
+                  <li><a href="#" class="dropdown-item">Air Conditioner</a></li>
+                  <li><a href="#" class="dropdown-item">Refrigerator</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Accessories
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="dropdown-item">Mobile Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Computer Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#" class="dropdown-item">Smart Watch Accessories</a>
+                  </li>
+                  <li><a href="#" class="dropdown-item">Audio Accessories</a></li>
+                </ul>
+              </li>
+  
+              <form class="form-inline">
+                <input
+                  class="form-item mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn text-white" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </button>
+              </form>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+                    />
+                  </svg>
+                  Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-cart-check-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"
+                    />
+                  </svg>
+                  Cart</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br><br>
+    <div class="container">
+        <h4> LOGIN PAGE</h4>
+        <form action="home.html" method="post">
+            <div class="form-floating mb-3 mt-3">
+                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="email"> Username </label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="password" class="form-control" id="password" name="password" required
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}">
+                <label for="email"> Password </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login </button>
+        </form>
+        <br>
+        <h5> Do not have an account, click here <a href="register.html">Register</a></h5>
+    </div>
+</body>
+</html>
