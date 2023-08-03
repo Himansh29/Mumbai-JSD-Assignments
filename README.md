@@ -1,5 +1,5 @@
-# ProjectS
-# Assignment Repository projectS
+# Mumbai-JSD-Assignments
+# Assignment Repository Mumbai-JSD-Assignments
 Welcome to the Assignment Repository! This repository houses a collection of assignments completed during my academic journey and online learning experiences on Generation Canvas and Codecademy.
 
 # About
